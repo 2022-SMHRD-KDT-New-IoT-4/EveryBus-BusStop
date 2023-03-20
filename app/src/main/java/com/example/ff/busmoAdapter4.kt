@@ -1,5 +1,4 @@
-package com.example.ex20230310
-
+package com.example.ff
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -7,11 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import busmoVO3
-import com.example.ff.R
-// 장애인
-class busmoAdapter3(val context: Context,val data:ArrayList<busmoVO3>)
-    :RecyclerView.Adapter<busmoAdapter3.ViewHolder>(){
+import com.example.ex20230310.busmoAdapter3
+
+// MAIN(일반사용자)
+class busmoAdapter4 (val context: Context, val data:ArrayList<busmoVO4>):
+    RecyclerView.Adapter<busmoAdapter4.ViewHolder>(){
     // 1) 뷰홀더 틀 만들기
     inner class ViewHolder(view: View):RecyclerView.ViewHolder(view){
         // view : onCreatViewHolder가 inflate해준 뷰 객체
@@ -32,18 +31,11 @@ class busmoAdapter3(val context: Context,val data:ArrayList<busmoVO3>)
 
         }
     }
-
-
-    // 2) implement members
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): busmoAdapter4.ViewHolder {
         //1
         val inflater = LayoutInflater.from(context)
-        val view = inflater.inflate(R.layout.busmo3_list,parent,false)
+        val view = inflater.inflate(R.layout.busmo4_list,parent,false)
         return ViewHolder(view)
-    }
-
-    override fun getItemCount(): Int {
-        return data.size
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
@@ -51,14 +43,11 @@ class busmoAdapter3(val context: Context,val data:ArrayList<busmoVO3>)
         holder.tvdc2.text = data[position].dc2
         holder.tvdc3.text = data[position].dc3
         holder.tvdc4.text = data[position].dc4
-        //ImageView.setImageResource (이미지 아이디)
-//        holder.img.setImageResource(data[position].img)
-
-
-
     }
 
-
+    override fun getItemCount(): Int {
+        return data.size
+    }
 
 
 }

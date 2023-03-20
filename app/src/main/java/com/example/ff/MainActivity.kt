@@ -18,10 +18,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.view, OneFragment())
-            .commit()
-
 
 
     //
@@ -35,16 +31,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        btn1.setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.view, OneFragment())
-                .commit()
-        }
-        btn2.setOnClickListener {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.view, TwoFragment())
-                .commit()
-        }
+
 
 
 

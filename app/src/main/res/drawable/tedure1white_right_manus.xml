@@ -8,7 +8,7 @@
 
                 android:color="#FAFAFA" />	<!--테두리 색-->
 
-            <solid android:color="#000000" />	<!--배경 색-->
+            <solid android:color="#27DFD4D4" />	<!--배경 색-->
         </shape>
     </item>
 

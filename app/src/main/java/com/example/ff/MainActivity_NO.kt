@@ -7,9 +7,7 @@ package com.example.ff
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.widget.Button
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import busmoVO1
@@ -17,9 +15,9 @@ import busmoVO2
 import busmoVO3
 import com.example.ex20230310.busmoAdapter2
 import com.example.ex20230310.busmoAdapter3
+// 장애인
 
-
-class MainActivity3 : AppCompatActivity() {
+class MainActivity_NO : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main3)
@@ -39,21 +37,20 @@ class MainActivity3 : AppCompatActivity() {
         // PokeMonVO("피카츄", "백만볼트", "level 3", R.drawable.p1)
 
 
+        // 곧도착 버스
         var busmoList1 = ArrayList<busmoVO1>()
 
 
+        busmoList1.add(busmoVO1("순한01B"))
+        busmoList1.add(busmoVO1("지원45"))
+        busmoList1.add(busmoVO1("금호46"))
         busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
-        busmoList1.add(busmoVO1("송암31"))
+        busmoList1.add(busmoVO1("첨단20"))
+        busmoList1.add(busmoVO1("운림50"))
+        busmoList1.add(busmoVO1("금호46"))
+        busmoList1.add(busmoVO1("대촌270"))
+        busmoList1.add(busmoVO1("순한01B"))
+        busmoList1.add(busmoVO1("지원45"))
         busmoList1.add(busmoVO1("송암31"))
 
 
@@ -86,20 +83,14 @@ class MainActivity3 : AppCompatActivity() {
         // 포켓몬 이름, 스킬, 레벨 + 이미지(R.drawable.p1) ---> Int
         // PokeMonVO("피카츄", "백만볼트", "level 3", R.drawable.p1)
 
-
+        // 승차예약 버스
         var busmoList2 = ArrayList<busmoVO2>()
 
-
+        busmoList2.add(busmoVO2("지원45"))
         busmoList2.add(busmoVO2("송암32"))
 
-        busmoList2.add(busmoVO2("송암32"))
-        busmoList2.add(busmoVO2("송암32"))
-        busmoList2.add(busmoVO2("송암32"))
-        busmoList2.add(busmoVO2("송암32"))
-        busmoList2.add(busmoVO2("송암32"))
-        busmoList2.add(busmoVO2("송암32"))
 
-        busmoList2.add(busmoVO2("송암32"))
+
 
         // name, skill, lv , img : Int -----> PokeMonVO
         // ArrayList<PokeMonVo>
@@ -131,10 +122,10 @@ class MainActivity3 : AppCompatActivity() {
         var busmoList3 = ArrayList<busmoVO3>()
 
         busmoList3.add(busmoVO3("송암32", "곧도착", "매우혼잡", "0"))
-        busmoList3.add(busmoVO3("송암33", "곧도착", "매우혼잡", "0"))
-        busmoList3.add(busmoVO3("송암33", "곧도착", "매우혼잡", "0"))
+        busmoList3.add(busmoVO3("첨단20", "8분", "매우혼잡", "0"))
+        busmoList3.add(busmoVO3("매월26", "곧도착", "매우혼잡", "0"))
 
-        busmoList3.add(busmoVO3("송암32", "곧도착", "매우혼잡", "0"))
+        busmoList3.add(busmoVO3("대촌270", "15분", "매우혼잡", "0"))
 
 
 
@@ -170,7 +161,7 @@ class MainActivity3 : AppCompatActivity() {
 
 
         btn_move_BJ.setOnClickListener {
-            val intent=Intent(this,MainActivityBJ::class.java)
+            val intent=Intent(this,MainActivity_User::class.java)
             startActivity(intent)
         }
 

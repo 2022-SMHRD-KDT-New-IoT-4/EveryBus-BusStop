@@ -21,7 +21,7 @@ class busmoAdapter2(val context: Context,val data:ArrayList<busmoVO2>):RecyclerV
         init{
             // 반드시 한번 실행 되는 곳
 
-            tvsdc1 = view.findViewById(R.id.tv_hdc1)
+            tvsdc1 = view.findViewById(R.id.tv_hdc_1)
 
 
         }

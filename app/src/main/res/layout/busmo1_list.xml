@@ -7,12 +7,12 @@
     android:padding="6dp">
 
     <TextView
-        android:id="@+id/tv_hdc1"
+        android:id="@+id/tv_hdc_1"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
-        android:gravity="center"
+        android:gravity="bottom"
         android:text="TextView"
-        android:textColor="#F6F6F6"
+        android:textColor="#FF0000"
         android:textSize="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

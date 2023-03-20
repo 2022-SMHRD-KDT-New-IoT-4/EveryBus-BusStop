@@ -10,7 +10,7 @@
         android:id="@+id/tv_hdc_1"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:background="@drawable/tedure1"
+        android:background="@drawable/tedure2"
         android:gravity="center"
         android:text="TextView"
         android:textColor="#020202"

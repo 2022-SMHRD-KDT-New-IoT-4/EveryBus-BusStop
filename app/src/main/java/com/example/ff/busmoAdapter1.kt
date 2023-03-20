@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import busmoVO1
-import com.example.ff.R
 
 
 class busmoAdapter1(val context: Context,val data:ArrayList<busmoVO1>):RecyclerView.Adapter<busmoAdapter1.ViewHolder>(){
@@ -21,7 +20,7 @@ class busmoAdapter1(val context: Context,val data:ArrayList<busmoVO1>):RecyclerV
         init{
             // 반드시 한번 실행 되는 곳
 
-            tvhdc1 = view.findViewById(R.id.tv_hdc1)
+            tvhdc1 = view.findViewById(R.id.tv_hdc_1)
 
 
         }
